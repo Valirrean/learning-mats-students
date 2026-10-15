@@ -253,7 +253,7 @@ header {
 }
 .btn-primary:hover { opacity: 0.9; }
 
-.classwork-section .btn-secondary{
+.lesson-section .btn-secondary{
     display: block;      
     margin: 15px auto 0; 
     background-color: var(--primary);
@@ -266,19 +266,19 @@ header {
     font-size: 16px;
     transition: 0.2s;
 }
-.classwork-section .btn-secondary:hover { opacity: 0.9; }
+.lesson-section .btn-secondary:hover { opacity: 0.9; }
 
 
 
 
-.subjects-header {
+.lessons-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px 5px 20px;
 }
 
-.subjects-header h3 {
+.lessons-header h3 {
     color: var(--primary);
     font-size: 26px;
 }
@@ -290,7 +290,7 @@ header {
     margin: 0 -20px 15px -20px; 
 }
 
-.subject-actions {
+.lesson-actions {
     display: flex;
     justify-content: space-between;  
     padding: 15px 20px 5px;         
@@ -327,7 +327,7 @@ header {
   
 }
 
-.subject-row {
+.lesson-row {
     display: flex;
     align-items: center;
     position: relative;
@@ -337,22 +337,11 @@ header {
 }
 
 
-.subject-row:first-child {
+.lesson-row:first-child {
     margin-top: 10px;
 }
 
-.yellow-dot {
-    width: 20px;
-    height: 20px;
-    background-color: #f2a900;
-    border-radius: 50%;
-    position: absolute; 
-    top: -7px;         
-    left: -7px;
-    z-index: 5;
-}
-
-.subject-card {
+.lesson-card {
     flex: 1;
     background: linear-gradient(90deg, var(--grad-left) 0%, var(--grad-mid), var(--grad-right) 100%);
     color: white;
@@ -381,541 +370,15 @@ header {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.card-reversed {
-    background: linear-gradient(90deg, var(--grad-right) 0%, var(--grad-mid), var(--grad-left) 100%);
-    margin-bottom: 20px;
-    cursor: default;
-}
 
-
-.card-left h2 { 
-    font-size: 22px; 
-    margin-bottom: 2px; 
-}
-.card-left p { 
-    font-size: 14px; 
-    opacity: 0.9; 
-}
-
-.card-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
-}
-
-.card-right .section-text-sm { 
-    font-size: 27px; 
-    font-style: italic; 
-}
-.bottom-align { 
-    justify-content: flex-end; 
-    height: 100%; 
-    margin-top: auto; 
-}
-
-.activity-box {
-    background-color: white;
-    color: var(--primary);
-    font-weight: bold;
-    padding: 4px 12px;
-    border-radius: 4px;
-    font-size: 13px;
-}
-.box-empty { 
-    color: #a42626; 
-}
-.schedule { 
-    font-style: italic; 
-    font-size: 14px; 
-}
-.lg-schedule { 
-    font-size: 20px; 
-    margin-top: 15px; 
-}
-.section-text { 
-    font-size: 20px; 
-    margin-top: 15px; 
-}
-.section-text-sm { 
-    font-size: 16px; 
-    font-style: italic; 
-}
-
-.three-dots {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0 5px;
-}
-.dropdown-menu {
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    color: black;
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    z-index: 10;
-    padding: 5px 0;
-    min-width: 130px;
-}
-.dropdown-menu p {
-    padding: 8px 15px;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0;
-}
-.dropdown-menu p:hover { background-color: #f0f0f0; }
-
-
-/* Subject detailnessa grid*/
-
-.details-content {
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    overflow: hidden;
-}
-.details-grid {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    overflow: hidden;
-}
-.grid-col {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    min-height: 0;
-}
-.col-header {
-    background-color: var(--primary);
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    padding: 8px;
-}
-
-
-
-.classwork-section { 
+.lesson-section { 
     padding: 15px; 
     overflow: hidden !important; 
 }
 
-.classwork-section .btn-secondary {
+.lesson-section .btn-secondary {
     display: block;      
     margin: 15px auto 0; 
-}
-
-.week-label { 
-    font-weight: 
-    bold; margin-bottom: 5px; 
-    color: var(--primary); 
-}
-.cw-card {
-    background: linear-gradient(90deg, var(--grad-left) 0%, var(--grad-mid), var(--grad-right) 100%);
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.cw-card .due-text { font-size: 13px; }
-
-
-.announcements-list { 
-    padding: 10px 15px; 
-    flex: 1;             
-    overflow-y: auto;   
-    min-height: 0;       
-}
-
-
-.announcement-item { 
-    margin-bottom: 20px; 
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 10px; 
-}
-.ann-header { 
-    display: flex; 
-    justify-content: space-between; 
-    font-size: 12px; 
-    font-weight: bold; 
-    color: var(--primary); 
-    margin-bottom: 5px;
-}
-.announcement-item h4 { 
-    font-size: 16px; 
-    margin-bottom: 5px; 
-}
-.announcement-item p { 
-    font-size: 13px; 
-    text-align: justify; 
-    line-height: 1.4; 
-}
-.ann-footer { 
-    text-align: right; 
-    font-weight: bold; 
-    margin-top: 5px; 
-    font-size: 14px;
-}
-
-
-
-
-
-
-
-.modal-back {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-
-#modal-confirmation, 
-#modal-success {
-    
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
-}
-
-.modal-close{
-    position:absolute;
-    top: 18px;
-    right: 22px;
-
-    background: transparent;
-    border: none;
-
-    color: var(--primary);
-    font-size: 40px;
-    font-weight: bold;
-
-    cursor: pointer;
-    line-height: 1;
-
-    transition: .2s;
-
-
-}
-.modal-content {
-    background: #ffffff;
-    padding: 35px 30px;
-    border-radius: 18px;
-    
-    
-    width: 90%;
-    max-width: 900px; 
-    
-    display: flex;
-    flex-direction: column;
-    max-height: 90vh; 
-    overflow: hidden;
-}
-
-
-
-.modal-content h2 {
-    
-    font-size: 30px;
-    font-family: 'Merriweather', serif;
-    color: var(--primary); 
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.modal-content h3 {
-    font-size: 25px;
-    font-family: sans-serif;
-    color: black; 
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-.modal-content p {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.card-left h2 { 
-    color: white; 
-    font-family: sans-serif;
-}
-
-.modal-sm { 
-    width: 100%; 
-    max-width: 700px; 
-    text-align: center; 
-}
-.modal-sm h2 { 
-    font-size: 48.2px; 
-    color: var(--primary); 
-    font-family:'Merriweather', serif; 
-    text-align: center;
-}
-.modal-sm .btn-success { 
-    width: 40%;
-    margin: 40px auto 10px auto; 
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 28px;
-    transition: 0.2s;
-}
-.btn-success:hover {
-    text-decoration: underline;
-}
-
-
-.modal-footer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.preview-container {
-    background-color: #e4dedea9; 
-    
-    /* top | right | bottom | left */
-    padding: 35px 16px 35px 16px; /* Increased 16px to 35px on top & bottom */
-    
-    border-radius: 8px;        
-    margin: 16px 0;            
-}
-
-.modal-md { 
-    width: 100%; 
-    max-width: 900px; 
-}
-.modal-lg { 
-    width: 100%; 
-    max-width: 1300px; 
-}
-
-
-
-.code-input {
-    display: block;
-    width: 40%;
-    margin: 0 auto 20px auto;
-    padding: 5px;
-    border: 2px solid var(--primary);
-    border-radius: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: var(--primary);
-}
-.code-input::placeholder { 
-    color: var(--primary); 
-    opacity: 0.7; }
-
-.modal-btn { 
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.2s;
-
-    
-    width: 288px; 
-    margin: 0 auto;     
-}
-.modal-btn:hover {
-    text-decoration: underline;
-}
-
-.invites-list { 
-    padding: 0 10px; 
-    
-    overflow-y: auto; 
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.invite-row { 
-    display: flex; 
-    align-items: center; 
-    gap: 15px; }
-.invite-row .subject-card { 
-    flex: 1; 
-    margin-bottom: 0; }
-.invite-actions { 
-    display: flex; 
-    gap: 10px; 
-    align-items: center; 
-    width: 180px; 
-    justify-content: flex-end;}
-
-.btn-accept { 
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    
-    
-    cursor: pointer;
-    font-weight: bold;
-    
-    transition: 0.2s;
-    
-    padding: 15px 15px; 
-    
-    border-radius: 6px; 
-    font-size: 14px; 
-}
-.btn-accept:hover {
-    text-decoration: underline;
-}
-
-
-.btn-reject { 
-    background-color: 
-    var(--primary); color: white; 
-    border: none; 
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
-    font-size: 16px; 
-    cursor: pointer; 
-    font-weight: bold;}
-.btn-reject:hover {
-    text-decoration: underline;
-}
-
-.accepted-box { 
-    border: 2px solid var(--primary); 
-    color: var(--primary); 
-    padding: 10px; 
-    border-radius: 6px; 
-    font-weight: bold; 
-    text-align: center; 
-    width: 100%; 
-    background: white;}
-
-.modal-content2 {
-    background: #ffffff;
-    padding: 20px 15px;
-    border-radius: 18px;
-    
-   
-    width: 90%;
-    max-width: 680px; 
-    
-    display: flex;
-    flex-direction: column;
-    max-height: 90vh; 
-    overflow: hidden;
-}
-
-.modal-box, .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.modal-confirmation {
-    background: #ffffff;
-    
-    
-    padding: 20px 15px; 
-    
-    border-radius: 18px;
-    max-width: 570px; 
-    margin: 0 auto; 
-    width: 100%;    
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.modal-confirmation h2{
-    font-size: 37px;
-    font-family: 'Merriweather', serif;
-    color: #841b1e;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.modal-confirmation p{
-    color: #841b1e;
-    font-size: 25px;
-    text-align: center;
-    
-}
-
-.modal-footer {
-    
-    margin-top: 60px; 
-    
-    display: flex;
-    justify-content: space-evenly;
-    width: 120%; 
-}
-.btn-cancel {
-    background-color: white;
-    color: var(--primary);
-    border: none;
-    outline: solid 2px #841b1e ;
-    padding: 8px 80px;
-    border-radius: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 25px;
-}
-.btn-cancel:hover {
-    text-decoration: underline;
-}
-
-
-.btn-proceed {
-    background-color: #841b1e;
-    color: white;
-    border: none;
-    outline: solid 2px #841b1e ;
-    padding: 8px 80px;
-    border-radius: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 25px;
-}
-.btn-proceed:hover {
-    text-decoration: underline;
 }
 
 
@@ -955,11 +418,11 @@ header {
     font-size: 15px;
 }
 
-.classwork-content{
+.lesson-content{
     margin:10px;
 }
 
-.classwork-details{
+.lesson-details{
     flex: 1;                     
     padding: 10px;
     margin-left: 40px;
@@ -972,18 +435,18 @@ header {
     max-height: 260px;
 }
 
-.classwork-details p{
+.lesson-details p{
     text-align: justify;
 }
 
-.classwork-details::-webkit-scrollbar {
+.lesson-details::-webkit-scrollbar {
     margin: 10px;
-    width: 12px; 
+    width: 12px;    
     height: 12px; 
     background-color: #000000;
 }
 
-.classwork-details::-webkit-scrollbar-thumb {
+.lesson-details::-webkit-scrollbar-thumb {
     border: 3px black solid;
     background-color: #ffffff;
     border-radius: 10px;
@@ -1004,33 +467,11 @@ header {
     margin-left: 10px;
 }
 
-.classwork-content h2 {
+.lesson-content h2 {
     color: var(--primary);
 }
 
-.submit-footer{
-    margin-left: 20px;
-    padding: 5px;
-    border-radius: 8px;
-    margin-top: auto;
-    align-items: center;
-    display: flex;
-}
 
-.upload-file{
-    display: flex;
-    justify-content: space-between;
-    margin-right:10px;
-    border: 2px black solid;
-    width: 84%;
-    background-color: white;
-}
-
-.upload-file p{
-    font-weight: bold;
-    padding-left: 10px;
-    margin-top:5px;
-}
 
 .btn-browse{
     border: 1px black solid;
