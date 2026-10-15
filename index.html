@@ -57,7 +57,7 @@
                 <div class="sidebar-title">Core Features</div>
                 <ul class="sidebar-list">
                    
-                    <li onclick="handleSidebarClick(this, 'list')" id="nav-subjects">
+                    <li onclick>
                         <div class="sidebar-icon-svg">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="8.5" cy="7" r="4" /><line x1="20" y1="8" x2="20" y2="14" /><line x1="17" y1="11" x2="23" y2="11" /></svg>
                         </div>
@@ -75,7 +75,7 @@
                         </div>
                         <span>Work Immersion</span>
                     </li>
-                    <li onclick=>
+                    <li onclick="handleSidebarClick(this, 'list')" id="nav-lessons">
                         <div class="sidebar-icon-svg">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
                         </div>
@@ -125,10 +125,10 @@
 
     
      
-<div id="view-subjects-list" class="white-container">
+<div id="view-lessons-list" class="white-container">
         
         <!-- Header & Buttons -->
-        <div class="container-header subjects-header">
+        <div class="container-header lessons-header">
             <h3>Lesson List</h3>
         </div>
         
@@ -167,122 +167,122 @@
                         
             
             <!-- Item 1 (With Activity) -->
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                     
                 </div>
             </div>
 
            
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                    
                 </div>
             </div>
 
             <!-- (No Activity Placeholder onwards) -->
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                     
                 </div>
             </div>
 
            
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                     
                 </div>
             </div>
 
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                     
                 </div>
             </div>
 
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                     
                 </div>
             </div>
             
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                     
                 </div>
             </div>
 
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                    
                 </div>
             </div>
             
             
-            <div class="subject-row">
-                <div class="subject-card" onclick="showSubjectDetails()">
+            <div class="lesson-row">
+                <div class="lesson-card" onclick="showLessonDetails()">
                     <div class="card-left">
                         <h2>Lesson Name</h2>
                         <p>Published Date</p>
                     </div>
                     <div class="card-right">
-                        <p class="schedule">Subject Name</p>
+                        <p class="SubName">Subject Name</p>
                     </div>
                 
                 </div>
@@ -292,27 +292,27 @@
     </div>
 
    
-    <!-- SUBJECT DETAILS -->
+  
     
-    <div id="view-subject-details" class="white-container hidden">
-        <div class="container-header subjects-header">
+    <div id="view-lesson-details" class="white-container hidden">
+        <div class="container-header lessons-header">
             <h3>Lesson Details</h3>
-            <button class="btn-primary" onclick="showSubjectsList()">Back</button>
+            <button class="btn-primary" onclick="showLessonsList()">Back</button>
         </div>
         
 
-       <div class="classwork-content">
+       <div class="lesson-content">
                 <div class="title-section">
                     <h2>Lesson Name</h2>
                 </div>
 
                 <div class="date-container">
                     <p class="posted-date">Date Published</p>
-                    <p class="due-date">Subject Name</p>
+                    <p class="Subname">Subject Name</p>
                 </div>
                     
                 <!-- START POINT (Text Paragraph) -->
-                <div class="classwork-details">
+                <div class="lesson-details">
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati repellendus laboriosam? Eaque, quia et qui molestiae soluta deserunt, tempora dicta mollitia sint laboriosam itaque officiis doloremque explicabo fugiat fugit nemo, modi blanditiis a esse. Iusto hic odio fuga quod maxime recusandae. Eum neque molestiae, sequi quae fuga aspernatur nisi nostrum eius corporis natus, commodi non. Odio cum tempora saepe quasi sequi provident tenetur, itaque fugit, praesentium earum blanditiis magni corrupti molestiae. Ducimus quas corporis ut expedita officiis aliquam repellendus at a, nesciunt soluta eum. Hic omnis animi ipsa veniam dignissimos. Non laudantium dolorum debitis, ullam repudiandae quo sint veritatis quis ea optio nostrum iusto soluta autem sequi tenetur veniam illo inventore? Culpa quisquam ad aliquid mollitia distinctio numquam error, soluta amet facere assumenda alias, impedit quas explicabo? Dolores, eos! Cumque sed illo, totam quae maiores laboriosam repellendus adipisci pariatur! Tempora eum consequatur blanditiis? Provident consequuntur dolor quaerat excepturi impedit at totam quibusdam culpa molestiae, distinctio aperiam ullam quia corporis atque ex. Dolorum neque reiciendis et sit necessitatibus autem ut eius labore voluptas consequuntur mollitia, laborum optio incidunt nesciunt sed cumque accusamus ea eos quasi quibusdam veritatis praesentium! Optio, assumenda ratione! Blanditiis illo non dolor nisi sapiente quisquam velit numquam aut deserunt, enim veniam! Sequi quo asperiores reprehenderit nulla odit vitae omnis tempore error natus quia perspiciatis veniam nesciunt voluptates eum excepturi ratione officia repudiandae totam quas repellendus exercitationem, distinctio corrupti non. Culpa, quaerat rem hic vero molestias, voluptates explicabo expedita dignissimos eligendi qui praesentium natus autem maxime quia reprehenderit quod repellat ducimus dolorum veniam nostrum iusto magnam nulla provident. Quam sint corporis, ipsum doloremque dolorum ad doloribus ullam harum aliquid omnis sed officiis dignissimos nesciunt esse architecto laboriosam dolor molestias modi numquam asperiores nobis atque incidunt! Beatae aut ipsum ipsa. Corrupti, sint! Earum obcaecati ipsum nobis mollitia soluta, nihil facilis odit modi neque! Dolorum deserunt aspernatur doloribus explicabo possimus, rem fugit, qui optio consequuntur accusamus perferendis perspiciatis recusandae totam sunt architecto ab? Maiores perferendis ducimus accusantium odit corrupti dolorem hic dolore assumenda voluptatem quam? Ipsum quo minus accusantium eveniet aperiam harum eaque dolorum vitae praesentium consequatur suscipit aut, fugit alias at magnam placeat ullam ut necessitatibus architecto eius rem nostrum quasi iusto. Mollitia quaerat libero dolore nam iusto porro voluptatum corporis aut, accusantium sed veritatis debitis autem, earum distinctio non reiciendis similique necessitatibus temporibus beatae pariatur ad voluptatibus rerum accusamus. Dolorem eaque error at modi sequi in quaerat, commodi aperiam eum nulla vero? Delectus exercitationem eius id quisquam nam recusandae omnis quas inventore, doloremque natus mollitia perspiciatis tenetur obcaecati voluptas velit nihil? Amet animi, quos autem id sit eligendi soluta quidem beatae repellat a nobis consequuntur accusantium quas possimus incidunt sequi magnam maxime repudiandae maiores esse. Ab commodi illum iste doloribus. Non ab aliquam vitae officiis consectetur, sequi laborum voluptas, voluptates nam dicta, error minus. Id, excepturi saepe! Omnis minus nam possimus quia nisi ad aspernatur cupiditate mollitia, delectus consequuntur officia placeat voluptatum quidem! Quam iusto dolore ad laboriosam? Quos pariatur autem laborum ea maxime. Sed, voluptatem. Id, ex. ipsum, dolor sit amet consectetur adipisicing elit. Cumque quibusdam alias praesentium perspiciatis voluptate asperiores molestias impedit quia eaque a eos tempora voluptatum, quo, culpa nostrum explicabo, iure nulla nobis delectus. Dolorem sed, voluptas mollitia omnis eius sit voluptatibus ducimus voluptates dolore hic qui laboriosam. Aperiam mollitia quibusdam asperiores. Libero ad, quod reprehenderit mollitia fugiat earum tempora voluptas excepturi sunt rem facilis dolor expedita temporibus illo explicabo impedit animi est at labore ratione velit placeat nam ipsa. Earum sapiente deserunt, consequuntur dignissimos fuga laudantium incidunt in culpa, tenetur eos ea quo fugiat eaque sit? Reprehenderit similique minima delectus sunt sapiente. </p>
                 </div>
                 <!-- END POINT (Text Paragraph) -->
