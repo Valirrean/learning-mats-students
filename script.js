@@ -60,14 +60,14 @@ function confirmAction() {
     closeAllModals();
 }
 
-function showSubjectDetails() {
-    document.getElementById('view-subjects-list').classList.add('hidden');
-    document.getElementById('view-subject-details').classList.remove('hidden');
+function showLessonDetails() {
+    document.getElementById('view-lessons-list').classList.add('hidden');
+    document.getElementById('view-lesson-details').classList.remove('hidden');
 }
 
-function showSubjectsList() {
-    document.getElementById('view-subject-details').classList.add('hidden');
-    document.getElementById('view-subjects-list').classList.remove('hidden');
+function showLessonsList() {
+    document.getElementById('view-lesson-details').classList.add('hidden');
+    document.getElementById('view-lessons-list').classList.remove('hidden');
 }
 
 
